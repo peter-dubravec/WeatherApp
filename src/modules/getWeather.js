@@ -3,7 +3,8 @@ import { addToPage, clearBox } from "./DOMFunctions.js";
 async function getWeather(city) {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=a8c12c82833e6b8d192d69b2496b72d0`
+      `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=a8c12c82833e6b8d192d69b2496b72d0`,
+      { mode: "cors" }
     );
     let JSONResponse = await response.json();
     let dataForUse = {
