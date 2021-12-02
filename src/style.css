@@ -16,6 +16,7 @@ body {
   background-image: url("./imgs/OKYJ1L0.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 900px;
 }
 
 header {
