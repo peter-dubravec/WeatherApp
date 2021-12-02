@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  height: 100%;
+  background-image: url("./imgs/OKYJ1L0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  height: 10vh;
+  min-height: 100px;
+  background-color: rgb(59, 229, 252);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form {
+  padding-top: 2em;
+}
+
+input {
+  display: block;
+  border-radius: 100px;
+}
+
+input[type="text"] {
+  min-width: 250px;
+  padding: 0.5em;
+  font-size: 2rem;
+}
+
+input[type="text"]:invalid {
+  border: 8px solid red;
+}
+
+input[type="submit"] {
+  margin: 1em auto 0;
+  border-radius: 5px;
+  font-size: 2rem;
+  padding: 0.5em 3em;
+}
+
+.resultbox {
+  font-size: 1.5em;
+  color: #fff;
+  width: 35%;
+  min-width: 300px;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 60px;
+  border-radius: 15px;
+}
+
+.resultbox p {
+  text-align: center;
+}
+
+p {
+  padding-top: 1em;
+}
+.resultbox p:nth-child(1) {
+  font-size: 2em;
+}
+
+.resultbox p:last-child {
+  padding-bottom: 2em;
+}
